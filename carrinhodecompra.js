@@ -18,10 +18,10 @@ numeroPadrao();
 function changeValue(option) {
     const valorFisicoElement = document.getElementById('valorFisico');
     if (option === 'Físico') {
-        valorFisicoElement.textContent = `Valor R$ ${valorFisicoAtualizado}`;
+        valorFisicoElement.textContent = `Valor:R$ ${valorFisicoAtualizado}`;
         valorAtual = valorFisico;
     } else if (option === 'Digital') {
-        valorFisicoElement.textContent = `Valor R$ ${valorDigitalAtualizado}`;
+        valorFisicoElement.textContent = `Valor:R$ ${valorDigitalAtualizado}`;
         valorAtual = valorDigital;
     }
     updateTotal();
