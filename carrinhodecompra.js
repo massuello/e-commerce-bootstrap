@@ -56,3 +56,9 @@ function updateTotal() {
     const total = (valorAtual * count).toFixed(2);
     totalElement.textContent = `Total: R$ ${total}`;
 }
+
+function addToCart() {
+    const cartCountElement = document.getElementById('cartcount');
+    cartCountElement.textContent = count + Number(cartCountElement.textContent);
+    element.addEventListener("click", () => {document.getElementById("cartcount").textContent = count;})
+}

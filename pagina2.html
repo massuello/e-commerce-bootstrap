@@ -25,14 +25,17 @@
             <input type="search" class="form-control" placeholder="Procurar..." aria-label="Search">
         </form>
         <nav class="menu">
-            <ul>
+            <ul style="display: flex; margin-top: 20px;">
                 <li><img id="coracao_menu" class="menu2" src="images/coracao.png" alt="coracao"></li>
-                <li><img id="compras_menu" class="menu2" src="images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="sacola de compras"></li>
+                <li><img id="cart" class="menu2" src="images/vista-lateral-vazia-do-carrinho-de-compras.png" alt="sacola de compras" data-quan></li>
+                <li><div><p id="cartcount"></p></div></li>
+                <div id="header">
+</div>
             </ul>
         </nav>
         <div class="dropdown text-end">
             <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle" style="position: relative; margin-left: 20px;" >
             </a>
 
         <ul class="dropdown-menu text-small">
@@ -107,6 +110,8 @@
     <div>
         <p id="total">Total: R$ 0.00</p>
     </div>
+    <div>
+        <button type="button" class="btn btn-primary" onclick="addToCart()">Adicionar ao carrinho</button>    </div>
 </div>
     <footer>
         <div>
